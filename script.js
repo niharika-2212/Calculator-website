@@ -11,7 +11,12 @@ on each value and operator click
 */
 
 function inputNumber(value){
-  document.querySelector("p").innerHTML = value;
+  if(document.querySelector("p").innerHTML==='0'){
+    document.querySelector("p").innerHTML = value;
+  }
+  else{
+    document.querySelector("p").innerHTML += value;
+  }
   cur_val = parseInt(value);
 }
 for (var i = 0; i < 10; i++) {
@@ -28,7 +33,7 @@ document.querySelector("body").addEventListener("keydown",function(event){
 })
 
 function inputOperations(value){
-  document.querySelector("p").innerHTML = value;
+  document.querySelector("p").innerHTML += value;
   last_val = cur_val;
   operation = value;
 }
