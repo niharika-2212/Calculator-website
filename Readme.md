@@ -26,4 +26,4 @@ cd <repo-name>
 - The result will be displayed in the output field.
 
 ## Live Demo
-You can view the website here
+You can view the website [here]{https://niharika-2212.github.io/Calculator-website/}
